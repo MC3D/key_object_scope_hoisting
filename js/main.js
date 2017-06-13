@@ -25,8 +25,8 @@ ANSWER THE FOLLOWING QUESTIONS
 ------------ ANSWER -------------------
 
 the variables are not what they claim to be; x is global; y is local;
-console.log(x) will print "I'm a local variable"; x is a variable declaration;
-console.log(y) will print a reference error; y is not defined;
+console.log(x) will print "I'm a local variable"; x is a global variable;
+console.log(y) will print a reference error; y is not defined globally; it's only accessible inside the function scopeThis;
 
 **************************************************************************************/
 
