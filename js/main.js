@@ -34,7 +34,7 @@ console.log(y) will print a reference error; y is not defined globally; it's onl
 # 2
 Hoisting
 - Study the code below and answer the following without checking the console.
-- What would console.log(x) and console.log(foot()) print? Why?
+- What would console.log(x) and console.log(foo()) print? Why?
 - Write you answer below the code.
 **************************************************************************************/
 (function() {
