@@ -103,7 +103,7 @@ Date object
 **************************************************************************************/
 (function() {
   "use strict";
-  var birthday = new Date(1983, 3, 21); // set value equal to new Date(1983, 3, 21) ////////////////
+  var birthday = Date.parse('April 21, 1983'); // set value equal to integer ////////////////
   var date = new Date(birthday); // moved this below var birthday expression ///////////////////////
   var bdayMsg = function() {
     return "You were born on " + date.toDateString();
