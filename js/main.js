@@ -103,12 +103,12 @@ Date object
 **************************************************************************************/
 (function() {
   "use strict";
-  var birthday = new Date(1983, 3, 21); // set value equal to new Date(1983, 3, 21)
-  var date = new Date(birthday); // moved this below var birthday expression
+  var birthday = new Date(1983, 3, 21); // set value equal to new Date(1983, 3, 21) ////////////////
+  var date = new Date(birthday); // moved this below var birthday expression ///////////////////////
   var bdayMsg = function() {
     return "You were born on " + date.toDateString();
   }
-  bdayMsg(); /// moved this below var bdayMsg expression;
+  bdayMsg(); /// moved this below var bdayMsg expression; //////////////////////////////////////////
   // console.log("#5 bdayMsg()", bdayMsg());
   console.assert(bdayMsg() === "You were born on Thu Apr 21 1983", "#5 Test failed. Check function hoisting.")
 })();
@@ -121,7 +121,7 @@ Date object
 (function() {
   "use strict";
   var today = new Date();
-  var stringDate = (new Date()).toString(); // added variable expression
+  var stringDate = today.toString(); // added variable expression //////////////////////////
   // console.log("#6 stringDate", stringDate)
   console.assert(stringDate === today.toString(), "#6 Test Failed. Did you set stringDate correctly?")
 })();
